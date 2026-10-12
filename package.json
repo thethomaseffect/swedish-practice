@@ -1,0 +1,79 @@
+{
+  "name": "swedish-practice",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Revise Swedish phrases, with more practice for the ones that cause trouble.",
+  "author": "Thomas Geraghty",
+  "license": "MIT",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thethomaseffect/swedish-practice.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:desktop": "concurrently -k \"vite\" \"wait-on http://127.0.0.1:5173 && cross-env ELECTRON_DEV=1 electron .\"",
+    "build": "tsc --noEmit && vite build",
+    "build:desktop": "tsc --noEmit && cross-env VITE_BASE_PATH=./ vite build",
+    "desktop": "electron .",
+    "dist": "npm run build:desktop && electron-builder",
+    "test": "vitest run",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.6",
+    "cross-env": "^7.0.3",
+    "electron": "^44.7.0",
+    "electron-builder": "^26.15.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4",
+    "wait-on": "^9.5.1"
+  },
+  "build": {
+    "appId": "com.thomasgeraghty.swedishpractice",
+    "productName": "Swedish Practice",
+    "executableName": "SwedishPractice",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "artifactName": "SwedishPractice-${version}-${os}-${arch}.${ext}",
+    "win": {
+      "target": ["nsis"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "target": ["dmg"],
+      "category": "public.app-category.education",
+      "identity": null
+    },
+    "linux": {
+      "target": ["AppImage"],
+      "category": "Education"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "thethomaseffect",
+        "repo": "swedish-practice"
+      }
+    ]
+  }
+}

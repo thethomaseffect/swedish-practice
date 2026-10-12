@@ -1,0 +1,19 @@
+---
+description: Add Swedish practice phrases from notes or photos
+alwaysApply: true
+---
+
+# Adding Swedish phrases
+
+When the user pastes notes or photos of Swedish writing, file the phrases in `data/phrases.json`. Do not invent phrases that are not in the notes. If a word is illegible, ask instead of guessing.
+
+Before saving:
+
+1. Check the Swedish spelling and the English translation against standard Swedish, not only the handwriting.
+2. If you change anything, tell the user first. For each change list what was written, what was saved, and why.
+3. Write a short pronunciation an English speaker can read aloud. Put the stressed syllable in capitals. Use `aw` for å, `eh` for ä, `ur` for ö, `hw` for sj-sounds, and `sh` for tj-sounds. Example: `Jag skulle vilja ha en kaffe` → `yahg SKOOL-leh VIL-ya hah ehn KAF-feh`.
+4. Put genuine alternatives in the English or Swedish field separated by ` / `.
+
+Keep existing phrases and their `id`s. When correcting a phrase that is already in the file, reuse its id and `createdAt`, and refresh `updatedAt`. New ids are slugs such as `vad-heter-du`; if that id is taken, use `vad-heter-du-2`.
+
+Each phrase needs `id`, `english`, `swedish`, `phonetic`, `notes`, `createdAt`, and `updatedAt`. Use an empty string for notes unless the user named a source. Do not edit `data/*.stats.json` or any other practice-history file.

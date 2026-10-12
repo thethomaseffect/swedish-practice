@@ -1,0 +1,428 @@
+{
+  "version": 1,
+  "phrases": [
+    {
+      "id": "hej",
+      "english": "Hello",
+      "swedish": "Hej",
+      "phonetic": "hey",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "hej-da",
+      "english": "Goodbye",
+      "swedish": "Hej då",
+      "phonetic": "hey daw",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "god-morgon",
+      "english": "Good morning",
+      "swedish": "God morgon",
+      "phonetic": "good MOR-gon",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "god-kvall",
+      "english": "Good evening",
+      "swedish": "God kväll",
+      "phonetic": "good kvell",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "god-natt",
+      "english": "Good night",
+      "swedish": "God natt",
+      "phonetic": "good naht",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "tack",
+      "english": "Thank you",
+      "swedish": "Tack",
+      "phonetic": "tahk",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "tack-sa-mycket",
+      "english": "Thank you very much",
+      "swedish": "Tack så mycket",
+      "phonetic": "tahk saw MEWK-et",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "varsagod",
+      "english": "You're welcome",
+      "swedish": "Varsågod",
+      "phonetic": "var-shaw-GOOD",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "ursakta",
+      "english": "Excuse me",
+      "swedish": "Ursäkta",
+      "phonetic": "ur-HWEK-tah",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "forlat",
+      "english": "Sorry",
+      "swedish": "Förlåt",
+      "phonetic": "fur-LAWT",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "ja",
+      "english": "Yes",
+      "swedish": "Ja",
+      "phonetic": "yah",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "nej",
+      "english": "No",
+      "swedish": "Nej",
+      "phonetic": "nay",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "hur-mar-du",
+      "english": "How are you?",
+      "swedish": "Hur mår du?",
+      "phonetic": "huer mawr doo",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "jag-mar-bra",
+      "english": "I'm fine, thanks",
+      "swedish": "Jag mår bra, tack",
+      "phonetic": "yahg mawr brah tahk",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "pratar-du-engelska",
+      "english": "Do you speak English?",
+      "swedish": "Pratar du engelska? / Talar du engelska?",
+      "phonetic": "PRAH-tar doo ENG-el-skah",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "jag-pratar-inte-svenska",
+      "english": "I don't speak Swedish",
+      "swedish": "Jag pratar inte svenska",
+      "phonetic": "yahg PRAH-tar IN-teh SVEN-skah",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "jag-pratar-lite-svenska",
+      "english": "I speak a little Swedish",
+      "swedish": "Jag pratar lite svenska",
+      "phonetic": "yahg PRAH-tar LEE-teh SVEN-skah",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "jag-forstar-inte",
+      "english": "I don't understand",
+      "swedish": "Jag förstår inte",
+      "phonetic": "yahg fur-STAWR IN-teh",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "kan-du-saga-det-igen",
+      "english": "Could you say that again?",
+      "swedish": "Kan du säga det igen?",
+      "phonetic": "kan doo SEH-yah deh ee-YEN",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "kan-du-prata-langsammare",
+      "english": "Could you speak more slowly?",
+      "swedish": "Kan du prata långsammare?",
+      "phonetic": "kan doo PRAH-tah LAWNG-sam-ah-reh",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "vad-heter-du",
+      "english": "What is your name?",
+      "swedish": "Vad heter du?",
+      "phonetic": "vahd HEH-ter doo",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "jag-heter",
+      "english": "My name is...",
+      "swedish": "Jag heter...",
+      "phonetic": "yahg HEH-ter",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "trevligt-att-traffas",
+      "english": "Nice to meet you",
+      "swedish": "Trevligt att träffas",
+      "phonetic": "TREV-ligt at TREF-as",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "var-ar-toaletten",
+      "english": "Where is the toilet?",
+      "swedish": "Var är toaletten?",
+      "phonetic": "vahr ehr too-ah-LET-en",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "var-ligger-tagstationen",
+      "english": "Where is the train station?",
+      "swedish": "Var ligger tågstationen?",
+      "phonetic": "vahr LIG-er TAWG-sta-HWOO-nen",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "var-ar-busshallplatsen",
+      "english": "Where is the bus stop?",
+      "swedish": "Var är busshållplatsen?",
+      "phonetic": "vahr ehr boos-HAWL-plat-sen",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "hur-kommer-jag-till",
+      "english": "How do I get to...?",
+      "swedish": "Hur kommer jag till...?",
+      "phonetic": "huer KOM-er yahg til",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "till-vanster",
+      "english": "Left",
+      "swedish": "Till vänster",
+      "phonetic": "til VEN-ster",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "till-hoger",
+      "english": "Right",
+      "swedish": "Till höger",
+      "phonetic": "til HUR-ger",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "rakt-fram",
+      "english": "Straight ahead",
+      "swedish": "Rakt fram",
+      "phonetic": "rahkt frahm",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "en-biljett",
+      "english": "A ticket, please",
+      "swedish": "En biljett, tack",
+      "phonetic": "ehn bil-YET tahk",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "vad-ar-klockan",
+      "english": "What time is it?",
+      "swedish": "Vad är klockan?",
+      "phonetic": "vahd ehr KLOK-an",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "jag-har-gatt-vilse",
+      "english": "I'm lost",
+      "swedish": "Jag har gått vilse",
+      "phonetic": "yahg hahr gawt VIL-seh",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "jag-behover-hjalp",
+      "english": "I need help",
+      "swedish": "Jag behöver hjälp",
+      "phonetic": "yahg beh-HUR-ver yelp",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "kan-du-hjalpa-mig",
+      "english": "Can you help me?",
+      "swedish": "Kan du hjälpa mig?",
+      "phonetic": "kan doo YEL-pah may",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "en-kaffe",
+      "english": "I would like a coffee",
+      "swedish": "Jag skulle vilja ha en kaffe",
+      "phonetic": "yahg SKOOL-leh VIL-ya hah ehn KAF-feh",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "en-ol",
+      "english": "A beer, please",
+      "swedish": "En öl, tack",
+      "phonetic": "ehn url tahk",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "ett-glas-vatten",
+      "english": "A glass of water, please",
+      "swedish": "Ett glas vatten, tack",
+      "phonetic": "et glahs VAT-en tahk",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "menyn",
+      "english": "The menu, please",
+      "swedish": "Menyn, tack",
+      "phonetic": "meh-NEW tahk",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "notan",
+      "english": "The bill, please",
+      "swedish": "Notan, tack",
+      "phonetic": "NOO-tan tahk",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "vad-kostar-det",
+      "english": "How much does it cost?",
+      "swedish": "Vad kostar det?",
+      "phonetic": "vahd KOS-tar deh",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "kan-jag-betala-med-kort",
+      "english": "Can I pay by card?",
+      "swedish": "Kan jag betala med kort?",
+      "phonetic": "kan yahg beh-TAH-lah mehd kort",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "ett-bord-for-tva",
+      "english": "A table for two, please",
+      "swedish": "Ett bord för två, tack",
+      "phonetic": "et boord fur tvaw tahk",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "skal",
+      "english": "Cheers",
+      "swedish": "Skål",
+      "phonetic": "skawl",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "jag-ar-allergisk",
+      "english": "I'm allergic to...",
+      "swedish": "Jag är allergisk mot...",
+      "phonetic": "yahg ehr a-LEHR-gisk moot",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "oppet",
+      "english": "Open",
+      "swedish": "Öppet",
+      "phonetic": "UR-pet",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    },
+    {
+      "id": "stangt",
+      "english": "Closed",
+      "swedish": "Stängt",
+      "phonetic": "stengt",
+      "notes": "Tourist phrases",
+      "createdAt": "2026-10-12T11:15:00.000Z",
+      "updatedAt": "2026-10-12T11:15:00.000Z"
+    }
+  ]
+}
