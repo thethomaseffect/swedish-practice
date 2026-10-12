@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Downloads } from "./components/Downloads";
 import { Library } from "./components/Library";
 import { Practice } from "./components/Practice";
@@ -18,9 +18,41 @@ import type { AppState, Direction, Phrase } from "./types";
 
 type View = "practice" | "review" | "library" | "downloads";
 
+const PLACE_KEY = "swedish-practice-place";
+
+type Place = { view: View; scrollY: number };
+
+function allowedViews(desktop: boolean): View[] {
+  return desktop ? ["practice", "review", "library"] : ["practice", "review", "library", "downloads"];
+}
+
+function readPlace(desktop: boolean): Place {
+  const fallback: Place = { view: "practice", scrollY: 0 };
+  try {
+    const raw = localStorage.getItem(PLACE_KEY);
+    if (!raw) return fallback;
+    const parsed = JSON.parse(raw) as Partial<Place>;
+    const view = allowedViews(desktop).includes(parsed.view as View) ? (parsed.view as View) : "practice";
+    const scrollY = typeof parsed.scrollY === "number" && Number.isFinite(parsed.scrollY) ? Math.max(0, parsed.scrollY) : 0;
+    return { view, scrollY };
+  } catch {
+    return fallback;
+  }
+}
+
+function writePlace(view: View, scrollY: number) {
+  try {
+    localStorage.setItem(PLACE_KEY, JSON.stringify({ view, scrollY: Math.max(0, Math.round(scrollY)) }));
+  } catch {
+    // The page still works if storage is blocked.
+  }
+}
+
 export function App() {
   const desktop = isDesktop();
-  const [view, setView] = useState<View>("practice");
+  const initialPlace = useRef(readPlace(desktop));
+  const scrollRestored = useRef(false);
+  const [view, setView] = useState<View>(initialPlace.current.view);
   const [state, setState] = useState<AppState | null>(null);
   const [info, setInfo] = useState<StorageInfo | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -55,6 +87,7 @@ export function App() {
   }, [reload]);
 
   useEffect(() => {
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
     void reload();
     return watchPhrasesFile(() => {
       if (saving.current > 0) {
@@ -64,6 +97,34 @@ export function App() {
       void reloadRef.current();
     });
   }, [reload]);
+
+  useLayoutEffect(() => {
+    if (!state || scrollRestored.current) return;
+    scrollRestored.current = true;
+    if (view === initialPlace.current.view) window.scrollTo(0, initialPlace.current.scrollY);
+    else writePlace(view, window.scrollY);
+  }, [state, view]);
+
+  useEffect(() => {
+    if (!scrollRestored.current) return;
+    writePlace(view, window.scrollY);
+  }, [view]);
+
+  useEffect(() => {
+    let frame = 0;
+    const save = () => {
+      if (!scrollRestored.current) return;
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => writePlace(view, window.scrollY));
+    };
+    window.addEventListener("scroll", save, { passive: true });
+    window.addEventListener("pagehide", save);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", save);
+      window.removeEventListener("pagehide", save);
+    };
+  }, [view]);
 
   async function persist(next: AppState) {
     saving.current += 1;
