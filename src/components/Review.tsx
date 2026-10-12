@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { accuracyLabel, troubleLabel, troubleWeight } from "../model";
-import { canSpeakSwedish, speakSwedish } from "../speak";
+import { canSpeak, speakPhonetic } from "../speak";
 import type { Phrase, PhraseStats } from "../types";
 
 type Sort = "trouble" | "swedish" | "english" | "newest";
@@ -69,8 +69,8 @@ export function Review({ phrases, stats }: ReviewProps) {
                 <p className="phonetic">{phrase.phonetic}</p>
                 <p className="english">{phrase.english}</p>
                 {phrase.notes && <p className="muted">{phrase.notes}</p>}
-                {canSpeakSwedish() && (
-                  <button type="button" className="secondary" onClick={() => speakSwedish(phrase.swedish)}>
+                {canSpeak() && (
+                  <button type="button" className="secondary" onClick={() => speakPhonetic(phrase.phonetic)}>
                     Listen
                   </button>
                 )}

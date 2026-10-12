@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { answersMatch, cardDirection, pickSession, SESSION_SIZE } from "../model";
-import { canSpeakSwedish, speakSwedish } from "../speak";
+import { canSpeak, speakPhonetic } from "../speak";
 import type { Direction, Phrase, PhraseStats, PromptDirection } from "../types";
 
 type Card = {
@@ -246,8 +246,8 @@ export function Practice({ phrases, stats, direction, onDirection, onResult, onO
               <div className="say-block">
                 <p className="eyebrow">Say it</p>
                 <p className="phonetic">{phrase.phonetic}</p>
-                {canSpeakSwedish() && (
-                  <button type="button" className="secondary" onClick={() => speakSwedish(phrase.swedish)}>
+                {canSpeak() && (
+                  <button type="button" className="secondary" onClick={() => speakPhonetic(phrase.phonetic)}>
                     Listen
                   </button>
                 )}
